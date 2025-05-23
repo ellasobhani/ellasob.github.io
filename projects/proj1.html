@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture Recognition – Ella Sobhani</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a href="../index.html" class="logo">esob</a>
+          <nav id="nav" class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="../index.html#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">Gesture Recognition for Touch-Free Gaming</h2>
+        </div>
+
+        <div class="about-row">
+          <div class="about-content">
+            <p class="about-descr">
+                This project reimagines digital interaction through <strong>touch-free gesture recognition</strong>, allowing users to control 
+                games using only hand movements. Our team designed a gesture-based interface that replaces traditional keyboard 
+                inputs with intuitive hand gestures. We began by analyzing a handful of browser-based games we were familiar with 
+                that could be suitable for our task. We went brainstormed and went through the <strong>ideation process</strong> for Super Stacker 2, 
+                Fireboy & Watergirl, and Bloxorz. After our ideation process we did <strong>Wizard-of-Oz testing</strong> to test our gestures and 
+                determined which game would be most appropriate to move forward with. We ended up selecting <strong>Braininess 2</strong>, a puzzle 
+                game that allows the user to jump from space block to space block, eliminating each block they leave behind. The game’s 
+                reliance on deliberate, sequential actions made it an ideal candidate for gesture-based controls. Using <strong>MediaPipe’s 
+                Hand Landmarks API</strong>, we developed a custom gesture recognition system to simulate keyboard input via <strong>PyAutoGUI</strong>. Our 
+                implementation supports: <strong>directional movement</strong> (thumbs up/down, index finger point, directional thumb swipes), <strong>custom gestures </strong>
+                for gameplay control, and a <strong>“rest state”</strong> gesture for intentional pacing between moves. The final prototype successfully 
+                enables players to complete all Braininess 2 levels without touching a keyboard or mouse. 
+            </p>
+            <a href="https://medium.com/@ess3/ditch-the-keyboard-gesture-recognition-for-touch-free-gaming-experiences-8dce066c61e1" target="_blank" class="btn">Learn More</a>
+          </div>
+
+          <div class="about-img">
+            <div class="about-img">
+                <img src="../img/proj1/woz.png" alt="Wizard-of-Oz Testing" class="project-img" />
+                <p style="text-align: center; font-size: 0.9rem; color: #000000; margin-top: 0.5rem;">
+                Wizard-of-Oz Testing
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="../img/proj1/b2.png" alt="Braininess2" class="project-img" />
+                <p style="text-align: center; font-size: 0.9rem; color: #000000; margin-top: 0.5rem;">
+                Braininess 2 Logo
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="../img/works/01.png" alt="MediaPipe’s Hand Landmarks" class="project-img" />
+                <p style="text-align: center; font-size: 0.9rem; color: #000000; margin-top: 0.5rem;">
+                Visualization of MediaPipe's 21 Hand Landmarks used in gesture classification.
+                </p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <p>&copy; 2025 Ella Sobhani</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Go to top button -->
+    <div id="goToTop" class="goToTop">
+      <a href="#top"><img src="../img/icons/arrow_up.svg" alt="Back to top" /></a>
+    </div>
+  </body>
+</html>

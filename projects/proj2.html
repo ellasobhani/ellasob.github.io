@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture Recognition – Ella Sobhani</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a href="../index.html" class="logo">esob</a>
+          <nav id="nav" class="nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+              <li class="nav-item"><a href="../index.html#projects" class="nav-link">Projects</a></li>
+              <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">Winnow Browser Extension</h2>
+        </div>
+        
+
+        <div class="about-row">
+          <div class="about-content">
+            <p class="about-descr">
+                Winnow is a browser extension designed to improve online reading by enabling quick access to <strong>Wikipedia</strong>.
+                Users can either (1) <strong>right-click a selected word</strong> or phrase to instantly open its Wikipedia page in a new 
+                tab or (2) click the extension icon and <strong>search directly from a pop-up window</strong>. Unlike Google, Wikipedia offers 
+                encyclopedia-style content that’s ideal for building foundational knowledge and exploring interconnected topics.
+                <br><br>
+                We brainstormed several ideas for our browser extension including a “Healthy Habits” reminder tool and a Pomodoro 
+                timer, but we found that both extensions already existed for the most part. We ultimately focused on right-click 
+                search functionality for Wikipedia, aiming for broad appeal and easy use.
+                <br><br>
+                Our key design principles were: simple, <strong>intuitive interaction</strong> (highlight → right-click → search), familiar UI 
+                patterns for a <strong>minimal cognitive load</strong>, <strong>universal design for accessibility</strong>, and <strong>broad applicability</strong>(Wikipedia).
+                <br><br>
+                We used a basic file structure for our implementation: <strong>popup.html and popup.js</strong> for the pop-up interface, 
+                <strong>content.js </strong>for right-click functionality, and <strong> manifest.json</strong> for configuration. We kept the UI minimal, with a clean 
+                search bar and visual cues like hover effects. Right-clicking opens the related Wikipedia page in a new tab, and the 
+                pop-up allows manual searches.
+                <br><br>
+                We interviewed three users who appreciated the extension’s functionality and ease of use. Some common feedback 
+                we gathered included: we should add <strong>Wikipedia preview text in the pop-up</strong>, we should allow <strong>repositioning of the icon 
+                or persistent icon display</strong>, and <strong>improve parsing of punctuation</strong> and phrasing. Based on this feedback, we enhanced the 
+                pop-up’s visual clarity and adjusted the search field to be bigger. In the future, we hope to add multilingual 
+                support and preview snippets for better context.
+            </p>
+            <a href="https://medium.com/@pay1_72714/winnow-browser-extension-2b0f3c4d5e8b" target="_blank" class="btn">Learn More</a>
+          </div>
+
+          <div class="about-img">
+            <div class="about-img">
+              <img src="../img/proj2/right_click.png" alt="Right-Click Prototype" class="project-img" />
+              <p class="caption">Our first prototype of the right-click functionality</p>
+            </div>
+            <br>
+            <div class="about-img">
+              <img src="../img/proj2/final_winnow.png" alt="Winnow Browser Extension" class="project-img" />
+              <p class="caption">Our current Winnow Pop-Up</p>
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-copyright">
+            <p>&copy; 2025 Ella Sobhani</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Go to top button -->
+    <div id="goToTop" class="goToTop">
+      <a href="#top"><img src="../img/icons/arrow_up.svg" alt="Back to top" /></a>
+    </div>
+  </body>
+</html>
